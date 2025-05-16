@@ -1,0 +1,261 @@
+body{
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+p , span{
+    color:#333;
+    font-size: 18px;
+}
+
+h5{
+    
+    font-weight: bold;
+    font-size: 20px;
+}
+
+h1{
+    font-family:serif;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.navbar{
+    background-color: white;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    position: sticky;
+    z-index: 1;
+}
+
+.logo{
+    margin-left: 50px;
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li{
+    margin-right: 20px;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.nav-links button{
+    padding: 10px;
+    width: 90px;
+    background-color: white;
+    color: black;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.nav-links button:hover{
+    background-color: yellow;
+}
+
+.nav-links select{
+    border: none;
+    font-size: 16px;
+}
+
+
+.nav-links a:hover{
+    color: yellow;
+    cursor: pointer;
+}
+
+.menu-icon{
+    display: none;
+    font-size: 24px;
+    color: black;
+    cursor: pointer;
+}
+
+#menu-toggle{
+    display: none;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.text{
+    width: 550px;
+    padding-top: 50px;
+}
+
+.text button{
+    background-color: rgb(215, 215, 0);
+    color: white;
+    padding: 18px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.text button:hover{
+    background-color: yellow;
+}
+
+.text button,img,span{
+    margin: 5px;
+}
+
+.hotels{
+    width: 150px;
+    height: 280px;
+    border-radius: 20px;
+    margin: 50px;
+    border: none;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flights{
+    width: 400px;
+    height: 500px;
+    border-radius: 20px;
+}
+
+#bookings{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.bookings{
+    display: flex;
+}
+
+.small{
+    margin-left: 10px;
+}
+
+.icons img{
+    padding: 20px;
+}
+
+#back{
+    background-color: rgb(255, 241, 255);
+    border-radius: 30px;
+    border-top-left-radius: 100px;
+    margin: auto;
+    padding: 50px;
+}
+
+#back h5{
+    width:500px;
+}
+
+#back input{
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+#back button{
+    background-image:linear-gradient(orangered , rgb(253, 104, 50)) ;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+
+footer{
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+}
+
+
+.first{
+    max-width: 280px;
+    text-align: center;
+    margin: 40px;
+}
+
+.last{
+    max-width: 250px;
+    text-align: center;
+    margin: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+ @media (max-width: 768px){
+    body{
+        overflow-x: hidden;
+    }
+
+    .navbar{
+        width: 150%;
+    }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333;
+        width:100%;
+        text-align: center;
+    }
+        
+    #menu-toggle:checked + .menu-icon + .nav-links {
+        display: flex;
+    }
+        
+    .nav-links li {
+        margin: 10px;
+    }
+
+    .nav-links li a{
+        color: white;
+    }
+        
+    .menu-icon{
+        display: block;
+    }
+
+    .container,.icons,#back,footer,.row{
+        display: block;
+        width: 150%;
+    }
+
+    .text,.hotels,h1,h5,footer .first,.last{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .flights{
+        margin: 20px;
+    }
+    }
